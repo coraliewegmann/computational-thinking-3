@@ -1,0 +1,12 @@
+[
+  { "name": "Sarajevo",     "lat": 43.86, "lon": 18.41,  "einwohner": 275000 },
+  { "name": "Budapest",     "lat": 47.50, "lon": 19.04,  "einwohner": 1750000 },
+  { "name": "New York",     "lat": 40.71, "lon": -74.01, "einwohner": 8300000 },
+  { "name": "Rom",          "lat": 41.90, "lon": 12.50,  "einwohner": 2800000 },
+  { "name": "Zandvoort",    "lat": 52.37, "lon": 4.53,   "einwohner": 17000 },
+  { "name": "Prag",         "lat": 50.08, "lon": 14.44,  "einwohner": 1300000 },
+  { "name": "Helsinki",     "lat": 60.17, "lon": 24.94,  "einwohner": 680000 },
+  { "name": "Montego Bay",  "lat": 18.47, "lon": -77.92, "einwohner": 110000 },
+  { "name": "Montpellier",  "lat": 43.61, "lon": 3.88,   "einwohner": 300000 },
+  { "name": "Porto",        "lat": 41.15, "lon": -8.61,  "einwohner": 230000 }
+]
