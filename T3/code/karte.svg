@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="700">
+  <rect width="1400" height="700" fill="#f4f1ea" stroke="#222"/>
+  <circle cx="771.5944444444444" cy="179.43333333333334" r="5.244044240850758" fill="#c0392b" fill-opacity="0.5"/>
+  <text x="779.8384886852951" y="183.43333333333334" font-family="sans-serif" font-size="11">Sarajevo</text>
+  <circle cx="774.0444444444445" cy="165.27777777777777" r="13.228756555322953" fill="#c0392b" fill-opacity="0.5"/>
+  <text x="790.2732009997675" y="169.27777777777777" font-family="sans-serif" font-size="11">Budapest</text>
+  <circle cx="412.18333333333334" cy="191.6833333333333" r="28.809720581775867" fill="#c0392b" fill-opacity="0.5"/>
+  <text x="443.9930539151092" y="195.6833333333333" font-family="sans-serif" font-size="11">New York</text>
+  <circle cx="748.6111111111111" cy="187.05555555555557" r="16.73320053068151" fill="#c0392b" fill-opacity="0.5"/>
+  <text x="768.3443116417926" y="191.05555555555557" font-family="sans-serif" font-size="11">Rom</text>
+  <circle cx="717.6166666666668" cy="146.3388888888889" r="1.3038404810405297" fill="#c0392b" fill-opacity="0.5"/>
+  <text x="721.9205071477073" y="150.3388888888889" font-family="sans-serif" font-size="11">Zandvoort</text>
+  <circle cx="756.1555555555556" cy="155.24444444444447" r="11.401754250991381" fill="#c0392b" fill-opacity="0.5"/>
+  <text x="770.557309806547" y="159.24444444444447" font-family="sans-serif" font-size="11">Prag</text>
+  <circle cx="796.9888888888888" cy="116.00555555555555" r="8.246211251235321" fill="#c0392b" fill-opacity="0.5"/>
+  <text x="808.2351001401241" y="120.00555555555555" font-family="sans-serif" font-size="11">Helsinki</text>
+  <circle cx="396.97777777777776" cy="278.1722222222222" r="3.3166247903554" fill="#c0392b" fill-opacity="0.5"/>
+  <text x="403.29440256813314" y="282.1722222222222" font-family="sans-serif" font-size="11">Montego Bay</text>
+  <circle cx="715.0888888888888" cy="180.40555555555557" r="5.477225575051661" fill="#c0392b" fill-opacity="0.5"/>
+  <text x="723.5661144639405" y="184.40555555555557" font-family="sans-serif" font-size="11">Montpellier</text>
+  <circle cx="666.5166666666667" cy="189.97222222222223" r="4.795831523312719" fill="#c0392b" fill-opacity="0.5"/>
+  <text x="674.3124981899794" y="193.97222222222223" font-family="sans-serif" font-size="11">Porto</text>
+</svg>

@@ -1,0 +1,1 @@
+Wie groß kann ich das svg maximal machen, dass es für einen Laptop Bildschirm passend ist?
