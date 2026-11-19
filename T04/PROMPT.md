@@ -1,0 +1,1 @@
+1. Erstelle mir den Code so, dass ein Ausschnitt auf der Karte angezeigt wird. 
