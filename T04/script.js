@@ -7,6 +7,11 @@ const HOEHE_SVG = 360;
 const sliderBreite = document.querySelector("#breite");
 // console.log(sliderBreite);
 
+const sliderZoom = document.querySelector("#zoom");
+
+// Um diesen Punkt wird gezoomt: Rom.
+const ZOOMPUNKT = { lat: 41.90, lon: 12.50 };
+
 
 // Welcher Teil der Welt gezeigt wird (in Grad). Hier: Europa.
 const AUSSCHNITT = { west: -12, ost: 32, nord: 64, sued: 34 };
@@ -18,6 +23,11 @@ function lonZuX(lon, breite) {
 // nord - lat, weil y auf dem Bildschirm nach unten wächst.
 function latZuY(lat, hoehe) {
   return ((AUSSCHNITT.nord - lat) / (AUSSCHNITT.nord - AUSSCHNITT.sued)) * hoehe;
+}
+
+// Schiebt einen Wert vom Zoompunkt weg (zoom > 1) – der Zoompunkt selbst bleibt, wo er ist.
+function zoomen(wert, mitte, zoom) {
+  return mitte + (wert - mitte) * zoom;
 }
 
 // Liegt der Ort innerhalb des Ausschnitts?
@@ -65,12 +75,16 @@ for (const ort of orte) {
 function zeichnen() { 
         const breite = Number(sliderBreite.value);
     const hoehe = breite * (AUSSCHNITT.nord - AUSSCHNITT.sued) / (AUSSCHNITT.ost - AUSSCHNITT.west);
+        const zoom = Number(sliderZoom.value);
+    // Wo liegt Rom auf der ungezoomten Karte?
+    const zoomX = lonZuX(ZOOMPUNKT.lon, breite);
+    const zoomY = latZuY(ZOOMPUNKT.lat, hoehe);
     let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${breite}" height="${hoehe}">
   <rect width="${breite}" height="${hoehe}" fill="#f4f1ea" stroke="#222"/>`;
 
 for (const ort of orte.filter(imAusschnitt)) {
-  const x = lonZuX(ort.lon, breite);
-  const y = latZuY(ort.lat, hoehe);
+    const x = zoomen(lonZuX(ort.lon, breite), zoomX, zoom);
+  const y = zoomen(latZuY(ort.lat, hoehe), zoomY, zoom);
   const r = einwohnerZuRadius(ort.einwohner);
   svg += `
   <circle cx="${x}" cy="${y}" r="${r}" fill="#c0392b" fill-opacity="0.5"/>
@@ -84,5 +98,6 @@ document.querySelector("#karte").innerHTML = svg;
 }
 
 sliderBreite.addEventListener("input", zeichnen)
+sliderZoom.addEventListener("input", zeichnen)
 zeichnen()
 
